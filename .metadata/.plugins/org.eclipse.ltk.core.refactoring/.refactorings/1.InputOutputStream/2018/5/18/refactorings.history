@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Helper.java&apos; to &apos;PNCExtract/src/characterCounter&apos;&#x0A;- Original project: &apos;1.InputOutputStream&apos;&#x0A;- Destination element: &apos;PNCExtract/src/characterCounter&apos;&#x0A;- Original element: &apos;Helper.java&apos;" description="Copy compilation unit" destination="=PNCExtract/src&lt;characterCounter" element1="/src&lt;{Helper.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1525339266533" units="1" version="1.0"/>
+</session>

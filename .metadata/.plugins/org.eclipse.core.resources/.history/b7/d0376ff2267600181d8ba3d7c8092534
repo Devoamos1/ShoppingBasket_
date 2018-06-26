@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.Iterator;
+
+import javax.swing.JOptionPane;
+
+public class CreateBasket {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		//Add ArrayList
+		ArrayList<Item> myItems = new ArrayList<Item>();
+		
+		//Create new item
+		Item newitem1 = new Item(null, null, 0);
+		Item newitem2 = new Item(null, null, 0);
+		
+
+		newitem1.setItemName("MacBook Pro");
+		newitem1.setItemInfo("256GB, 4GB RAM, 2.6hz CPU");
+		newitem1.setPrice(3.82);
+		
+		newitem2.setItemName("Dell GMC");
+		newitem2.setItemInfo("500GB, 8GB RAM, 3.6hz CPU");
+		newitem2.setPrice(220.50);
+		
+		myItems.add(newitem1);
+		myItems.add(newitem2);
+		
+		//Create new Basket
+		Basket newBasket = new Basket();
+		
+		newBasket.addItem(myItems);
+		
+		//System.out.println(newBasket.getTotalNumberOfItems());
+	    newBasket.getBasket(myItems);
+		newBasket.getTotalItems(myItems);
+		newBasket.getTotalCost();
+		//newBasket.showBasket();
+		
+		System.out.print(newitem1);
+	
+	}
+	
+
+}

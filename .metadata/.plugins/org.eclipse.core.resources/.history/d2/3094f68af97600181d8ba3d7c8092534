@@ -1,0 +1,79 @@
+import java.util.ArrayList;
+
+public class Item {
+	
+	//Item attributes
+	private int id;
+	private String itemName;
+	private String itemInfo;
+	private double price;
+	
+	
+	
+	//Initialise fields 
+	public Item(String itemName, String itemInfo, double price) { //Item instance
+		this.itemName = itemName; 
+		this.itemInfo = itemInfo; 
+		this.price = price;
+	}
+	
+//	public int getId() {
+//		return id;
+//	}
+//
+//	public void setId(int id) {
+//		this.id = id;
+//	} 
+	
+	
+	public String getItemName() {
+		return itemName;
+	}
+
+	public void setItemName(String itemName) {//Create Item Name
+		this.itemName = itemName;
+	}
+
+	public String getItemInfo() {
+		return itemInfo;
+	}
+
+	public void setItemInfo(String itemInfo) {//Create Item Info
+		this.itemInfo = itemInfo;
+	}
+
+	public double getItemPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		//Set price error
+		this.price = price;
+	}
+	
+	
+	public void Print()
+	{
+		System.out.println(getItemName() + " "+ getItemInfo());
+		System.out.print("Price:" + "£"+ getItemPrice());
+		System.out.println("");
+	}
+
+
+	private ArrayList<Item> myItems = new ArrayList<Item>();
+	
+	Item newitem1 = new Item();
+	
+	newitem1.setItemName("MacBook Pro");
+	newitem1.setItemInfo("256GB, 4GB RAM, 2.6hz CPU");
+	newitem1.setPrice(3.82);
+	
+	newitem2.setItemName("Dell GMC");
+	newitem2.setItemInfo("500GB, 8GB RAM, 3.6hz CPU");
+	newitem2.setPrice(200.50);
+	
+	myItems.add(newitem1);
+	myItems.add(newitem2);
+	
+}
+	

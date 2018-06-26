@@ -1,0 +1,62 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
+import java.sql.*;
+
+import com.mysql.jdbc.Statement;
+
+// Notice, do not import com.mysql.jdbc.*
+// or you will have problems!
+
+public class connectToSQL {
+
+	//verifyServerCertificate=false&useSSL=true" Allowed me to remove SSL certificate
+
+
+	public static void main(String[] args) throws SQLException {
+		
+		Connection myConn = null;
+		java.sql.Statement myStat = null;
+		ResultSet myResults = null;
+		
+
+		try {//Try this section of code
+			//1.Get a connection to the database 
+			myConn = DBUtil.getConnection(DBType.MYSQLDB);
+			System.out.println("Connected");
+
+			//2.Create a statement object 
+			myStat = myConn.createStatement();
+
+			//3.Execute a SQL query 
+			
+			myResults = myStat.executeQuery("select * from education");//For select statements 
+			//myResults = myStat.updateQuery("");//Used to INSERT, UPDATE, DELETE 
+
+
+			//4. Process the result set and Return results
+			while(myResults.next()) {//Go to next row
+				System.out.println(myResults.getInt("education_id")+" "+ myResults.getString("institute_name") +" " +myResults.getString("institute_type"));
+			}
+
+			//5.Retrieve the data 
+
+			//Catch error
+		}catch (SQLException e){
+//			System.out.print("Could not connect");
+//			e.printStackTrace();
+			DBUtil.showErrorMessage(e);
+		}
+		finally {
+			if(myResults != null)
+			myResults.close();
+			if(myStat != null)
+				myResults.close();
+			if(myConn != null)
+				myResults.close();
+		}
+
+
+	}
+
+}

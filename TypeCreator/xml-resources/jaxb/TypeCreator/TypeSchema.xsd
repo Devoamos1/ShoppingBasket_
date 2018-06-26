@@ -1,0 +1,86 @@
+<?xml version="1.0"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+            targetNamespace="http://types"
+             xmlns:tns="http://types"
+           elementFormDefault="qualified">
+    
+    <xsd:complexType name="Type"> 
+        <xsd:sequence>
+            <xsd:element name = "Name" type = "xsd:string"/>   
+            <xsd:element name="Strengths">
+       <xsd:complexType> 
+        <xsd:sequence>
+            <xsd:element name = "Strength" type = "tns:Effectiveness" minOccurs = "0" maxOccurs = "unbounded"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+       </xsd:element>
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Effectiveness"> 
+        <xsd:sequence>
+            <xsd:element name = "Type" type = "xsd:string"/>
+            <xsd:element name = "Damage" type = "xsd:double"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    
+     <xsd:complexType name="Single"> 
+        <xsd:sequence>
+            <xsd:element name = "Type1" type = "tns:Type"/>   
+            <xsd:element name="Weaknesses">
+       <xsd:complexType> 
+        <xsd:sequence>
+            <xsd:element name = "Weakness" type = "tns:Effectiveness" minOccurs = "0" maxOccurs = "unbounded"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+       </xsd:element>       
+        </xsd:sequence>
+    </xsd:complexType>
+    
+    <xsd:complexType name="Dual"> 
+        <xsd:sequence>
+            <xsd:element name = "Type1" type = "tns:Type"/>
+            <xsd:element name = "Type2" type = "tns:Type"/> 
+    <xsd:element name="Weaknesses">
+       <xsd:complexType> 
+        <xsd:sequence>
+            <xsd:element name = "Weakness" type = "tns:Effectiveness" minOccurs = "0" maxOccurs = "unbounded"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+       </xsd:element>  
+        </xsd:sequence>
+    </xsd:complexType>
+ 
+
+<xsd:element name="PokemonTypes">
+       <xsd:complexType > 
+        <xsd:sequence>
+
+<xsd:element name="SingleTypes">
+       <xsd:complexType > 
+        <xsd:sequence>
+            <xsd:element name = "SingleType" type = "tns:Single" minOccurs = "0" maxOccurs = "unbounded"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+   
+<xsd:element name="DualTypes">
+       <xsd:complexType> 
+        <xsd:sequence>
+            <xsd:element name = "DualType" type = "tns:Dual" minOccurs = "0" maxOccurs = "unbounded"/> 
+        </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+
+        </xsd:sequence>
+    </xsd:complexType>
+   </xsd:element>
+
+</xsd:schema>

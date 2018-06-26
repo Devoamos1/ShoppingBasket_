@@ -1,0 +1,82 @@
+import java.util.Scanner;
+
+public class Student {
+
+	
+	private String firstname;
+	private String lastname;
+	private int gradeYear;
+	private String courses;
+	private String StudentID;
+	private int tuitionBalance;
+	
+	//Attributes of all objects
+	
+	private static int costOfCourse = 600;
+	private static int id = 1000;
+
+	
+	
+	public Student (){
+		
+		Scanner StudentInput = new Scanner(System.in); //Take input from console
+		
+		System.out.print("Enter student firstname:");//Prompt
+		this.firstname = StudentInput.nextLine();
+		
+		System.out.print("Enter students lastname:");
+		this.lastname = StudentInput.nextLine());
+		
+		System.out.print("Enter graduation year \n 1.Primary school \n 2.Secondary school\n 3.College \n 4.University");
+		this.gradeYear = StudentInput.nextInt();
+//		if (StudentInput.nextInt() = 1 ) {
+		
+		setStudentID();
+		
+		System.out.println(firstname + lastname + gradeYear + StudentID);
+		
+		
+		
+		//Increment student by 1
+//			
+//		}
+	}
+
+
+	public String getFirstname() {
+		return firstname;
+	}
+
+
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+
+
+
+	private void setStudentID() {
+		
+		id++;
+		StudentID = gradeYear + " " + id;
+
+	}
+
+
+	public String getStudentID() {
+		return StudentID;
+	}
+
+	
+	//Constructor: prompt user to add name and year
+	
+	//Generate ID
+	
+	//Enroll onto course
+	
+	//View balance
+	
+	//Pay tuition 
+	
+	//Show status
+	
+}
