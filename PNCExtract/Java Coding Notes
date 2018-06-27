@@ -1,0 +1,31 @@
+Notes
+
+Concept /Task
+
+Loop through files LD001.1 LD001.2 LD001.3 hence bufferedreader[]
+Create count total and output that total to a text file hence BufferedWriter writer
+
+Java buffer - It is a region of a physical memory storage used to temporarily store data 
+while it is being moved from one place to another.
+
+Implement class using  
+- public class DevontesCounter implements Counter {
+
+1. Using regular expression defines a search pattern for strings.
+
+Read all ASCII extended list and output all characters not used.
+
+
+
+Java notes
+
+FileInputstream - A FileInputStream obtains input bytes from a file in a file system. What files are available depends on the host environment.
+
+Data inputstream - The DataInputStream works with the binary data, while the BufferedReader work with character data
+
+Buffered reader
+.replaceall changes a substring of text in a line to a new string 
+
+InputStream - is that InputStream reads as byte - Both work with normal text But if the text is a你们, which is composed of an a and two Chinese characters, then the  InputStream does not work.
+InputStreamReader -  while InputStreamReader reads as char. 
+

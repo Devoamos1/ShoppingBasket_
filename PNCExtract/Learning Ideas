@@ -1,0 +1,68 @@
+Every Java Developer should know the following core java concepts -
+
+OOPs Concepts
+Abstract Classes and Interfaces
+Constructors
+File IO and Serialization
+Collections - List , Map , Set
+Access Specifiers
+Exceptions - Checked , Unchecked
+Generics
+Java Keywords - Static , Final , volatile, synchronized , transient, this super etc.
+JVM and Memory Management
+Multithreading and Synchronization
+Design Pattern
+
+
+
+10 Skills that will make you a better Java Developer:
+
+1. At least one MVC Framework like JSF, Playframework, Struts, or Spring MVC
+2. Hibernate or JPA for databases
+3. Dependency Injection (@Resource)
+4. SOAP based Web Services (JAX-WS)
+5. Some build tool (Ant, Maven, etc.)
+6. JUnit (or other Unit Testing framework)
+7. Version Control mostly Git
+8. JSTL
+9. Application server/container configuration management and application deployment (whether it is WebSphere, Tomcat, JBoss, etc. you need to know where your application runs and how to improve its execution)
+10. AJAX
+
+
+ That’s why it is essential to knowing basic data structures like 
+ Data structures - A data structure is a particular way of organizing and storing data in a computer so that it can be accessed and modified efficiently
+ 	Primitive types - 
+ 		Boolean - true or false.
+		Char - Character
+		Float/Double - Floating-point numbers, limited precision rational number values.
+		Int - Including Single precision and Double precision IEEE 754 Floats, among others
+		Reference (also called a pointer or handle), a small value referring to another object's address in memory, possibly a much larger one.
+		Enumerated type, a small set of uniquely named values.
+ 	Composite types - 
+ 		Arrays
+ 		Strings
+ 	Abstract types - 
+ 		Linked Lists
+ 		Stacks
+ 		Queues
+ 		Trees
+ 		Heap
+ 		Dictionaries
+ 		Hash Tables
+ 		Graphs
+
+ Algorithms - a process or set of rules to be followed in calculations or other problem-solving operations, especially by a computer.
+ 	Searching
+ 	Sorting 
+ 	Hashing
+ 	Graph algorithms
+ 	Greedy algorithms
+ 	Dynamic Programming.
+ 	
+Design Patterns - Design patterns are general reusable solution to a commonly occurring problem within a given context in software design.
+
+Testing and Debugging (T&D) 
+
+How to write a JavaDoc
+
+Create an API

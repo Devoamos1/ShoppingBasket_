@@ -53,12 +53,16 @@ public class Item {
 	}
 	
 	
-	public void Print()
+	public String Print()
 	{
 		
-		System.out.println(getItemName() + " "+ getItemInfo());
-		System.out.print("Price:" + "£"+ getItemPrice());
-		System.out.println("");
+//		System.out.println(getItemName() + " "+ getItemInfo());
+//		System.out.print("Price:" + "£"+ getItemPrice());
+//		System.out.println("");
+		
+		String details = getItemName() + "/n"+ getItemInfo() +  "/nPrice:"+ "£"+ getItemPrice();
+		
+		return details;
 	}
 
 
