@@ -9,39 +9,34 @@ import javax.swing.JOptionPane;
 public class CreateBasket {
 
 	public static void main(String[] args) {
+	
 		// TODO Auto-generated method stub
 		
-		List<Item> shoppingItems = new ArrayList<>();
-		shoppingItems.add(new Item("MacBook Pro", "256GB, 4GB RAM, 2.6hz CPU", 255));
-		shoppingItems.add(new Item("MacBook Pro", "256GB, 4GB RAM, 2.6hz CPU", 255));
-		shoppingItems.add(new Item("MacBook Pro", "256GB, 4GB RAM, 2.6hz CPU", 255));
-		 
-		// Code sample starts here
-		// -----------------------
-		Map<String, List<Basket>> addItem = new HashMap<>();
-		addItem.put("Computers", shoppingItems);
-		 
-		cars.add(new Car("Prius"));
-		System.out.println(carsByBrand.get("Toyota"));
+		String item1name, item2name, item1info, item2info, item3name, item3info;
+		double item1price, item2price, item3price;
 		
-		//Add ArrayList
-		ArrayList<Item> myItems = new ArrayList<Item>();
+		item1name = "Mac Book Pro";
+		item1info = "256GB, 4GB RAM, 2.6hz CPU";
+	    item1price = 799; 
+	    
+	    item2name = "Dell GMC";
+		item2info = "500GB, 8GB RAM, 3.6hz CPU";
+	    item2price = 220.50; 
 		
+	    
+	    item3name = "Microsoft Surface Pro";
+		item3info = "500GB, 8GB RAM, 3.6hz CPU";
+	    item3price = 220.50; 
 		//Create new item
-		Item newitem1 = new Item(null, null, 0);
-		Item newitem2 = new Item(null, null, 0);
+		Item newitem1 = new Item(item1name, item1info, item1price); 	
+		Item newitem2 = new Item(item2name, item2info, item2price);
+		Item newitem3 = new Item(item3name, item3info, item3price);
 		
 
-		newitem1.setItemName("MacBook Pro");
-		newitem1.setItemInfo("256GB, 4GB RAM, 2.6hz CPU");
-		newitem1.setPrice(3.82);
-		
-		newitem2.setItemName("Dell GMC");
-		newitem2.setItemInfo("500GB, 8GB RAM, 3.6hz CPU");
-		newitem2.setPrice(200.50);
 		
 		myItems.add(newitem1);
 		myItems.add(newitem2);
+		myItems.add(newitem3);
 		
 		//Create new Basket
 		Basket newBasket = new Basket();

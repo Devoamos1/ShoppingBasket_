@@ -11,12 +11,12 @@
 		<item value="github.com"/>
 	</list>
 	<list key="CommitDialog.authorValues">
-		<item value="Devonte1 &lt;devonteyeah@gmail.com&gt;"/>
 		<item value="Devoamos1 &lt;devonteamos@hotmail.com&gt;"/>
+		<item value="Devonte1 &lt;devonteyeah@gmail.com&gt;"/>
 	</list>
 	<list key="CommitDialog.committerValues">
-		<item value="Devonte1 &lt;devonteyeah@gmail.com&gt;"/>
 		<item value="Devoamos1 &lt;devonteamos@hotmail.com&gt;"/>
+		<item value="Devonte1 &lt;devonteyeah@gmail.com&gt;"/>
 	</list>
 	<section name="GitImportWizard">
 	</section>
@@ -34,8 +34,8 @@
 	<section name="GitCommitMessageComponent">
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
-		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
-		<item value="false" key="sortItemState"/>
+		<item value="838,161" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="true" key="sortItemState"/>
 		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
 	</section>
 </section>

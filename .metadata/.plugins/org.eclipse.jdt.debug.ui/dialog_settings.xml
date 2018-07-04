@@ -6,7 +6,7 @@
 	<item value="134" key="org.eclipse.jdt.debug.ui.jre_preference_page_context.columnWidth0"/>
 	<section name="org.eclipse.jdt.debug.ui.MAIN_METHOD_SELECTION_DIALOG">
 		<item value="true" key="ShowStatusLine"/>
-		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=1.InputOutputStream/src&amp;lt;{CreateZipFile.java[CreateZipFile&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=PNCExtract/src&amp;lt;characterCounter{CharacterCounter.java[CountCharactersFromFile&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode&gt;=1.InputOutputStream/src&amp;lt;{CreateZipFile.java[CreateZipFile&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=PNCExtract/src&amp;lt;characterCounter{CharacterCounter.java[CountCharactersFromFile&lt;/infoNode&gt;&#x0A;&lt;infoNode&gt;=StudentDatabase/src&amp;lt;{StudentDatabaseApp.java[StudentDatabaseApp&lt;/infoNode&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
 		<section name="DialogBoundsSettings">
 			<item value="600" key="DIALOG_WIDTH"/>
 			<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
